@@ -1,0 +1,114 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "AdsPower",
+    "collectionId": "80320fcf-f45b-4020-96bd-b93ac4c9aaf8",
+    "dateExported": "2025-02-03T17:10:08.807Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "144bae9c-2cce-4932-aab7-bf6809282234",
+            "colId": "80320fcf-f45b-4020-96bd-b93ac4c9aaf8",
+            "containerId": "",
+            "name": "Get Group Info",
+            "url": "http://local.adspower.net:50325/api/v1/group/list?group_name=Automation",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-11-28T16:06:48.713Z",
+            "modified": "2024-11-28T16:45:15.944Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "group_name",
+                    "value": "Automation",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "ff7df9b8-bb11-4c57-98f4-d658b029af68",
+            "colId": "80320fcf-f45b-4020-96bd-b93ac4c9aaf8",
+            "containerId": "",
+            "name": "Create Profile",
+            "url": "http://local.adspower.net:50325/api/v1/user/create",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-11-28T16:07:23.841Z",
+            "modified": "2024-11-28T17:20:47.048Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Automation Profile\",\n  \"domain_name\":\"etsy.com\",\n  \"proxyid\": \"5\",\n  \"group_id\":\"5346181\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "f7fa41ff-63be-4164-860a-764af0c363bb",
+            "colId": "80320fcf-f45b-4020-96bd-b93ac4c9aaf8",
+            "containerId": "",
+            "name": "Start Browser",
+            "url": "http://local.adspower.net:50325/api/v1/browser/start?user_id=kqh0wkb",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-11-28T16:12:02.010Z",
+            "modified": "2024-11-28T16:31:04.303Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "user_id",
+                    "value": "kqh0wkb",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "8539eac9-51ee-459c-8570-bebb8a099ec8",
+            "colId": "80320fcf-f45b-4020-96bd-b93ac4c9aaf8",
+            "containerId": "",
+            "name": "Check Status",
+            "url": "http://local.adspower.net:50325/status",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-11-28T16:40:36.824Z",
+            "modified": "2024-11-28T16:40:42.686Z",
+            "headers": []
+        },
+        {
+            "_id": "aab4d48e-6ba9-4e21-bda3-b3913cd79d4e",
+            "colId": "80320fcf-f45b-4020-96bd-b93ac4c9aaf8",
+            "containerId": "",
+            "name": "Delete Profile",
+            "url": "http://local.adspower.net:50325/api/v1/user/delete",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-11-30T14:28:57.661Z",
+            "modified": "2024-11-30T20:30:45.723Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"user_ids\":[\"kqkhca5\"]\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "ee1f2457-950e-429f-8968-5f5ac09a647c",
+            "colId": "80320fcf-f45b-4020-96bd-b93ac4c9aaf8",
+            "containerId": "",
+            "name": "Close Browser",
+            "url": "http://local.adspower.net:50325/api/v1/browser/stop?user_id=kqkhca5",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-11-30T20:09:47.828Z",
+            "modified": "2024-11-30T20:12:18.102Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "user_id",
+                    "value": "kqkhca5",
+                    "isPath": false
+                }
+            ]
+        }
+    ],
+    "ref": "sGNZoBpBZjoXcwnQKcreo_6TouOtI2cXCP0G70EzSPVyrnh_Op--Jin2bftCUjg2WjMyFIuYLSWSsrWRoedEbQ"
+}
